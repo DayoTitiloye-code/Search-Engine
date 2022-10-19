@@ -19,16 +19,11 @@ function search (e) {
 
 async function callGoogle (q) {
 
-    let youngApiKey = 'AIzaSyBg77XjHNeflTC57BDwNiSNvJjGHQMH6H0'
-    let dayoApiKey = 'AIzaSyCZyGyW_no5i82zNYV-_sYyz7GLSjqvrQc'
-
-    let url = `https://www.googleapis.com/customsearch/v1?key=${dayoApiKey}&cx=e5d862fcf3cff4a4f&gl=uk&q=${q}`
-
     let endPoint = `http://localhost:3000/${q}`
 
     const res =  await fetch(endPoint);
     const data = await res.json();
-    console.log(data);
+    
     searchResultsGlobal = data;
     displayResults ()
 
@@ -49,9 +44,11 @@ function displayResults () {
         const a = document.createElement('a');
 
         title.textContent = element.title;
+        title.classList.add("title");
         snippet.textContent = element.snippet;
-        a.textContent = 'click here';
+        a.textContent = 'More Info';
         a.href = element.link;
+        a.classList.add("link");
 
         li.append(title);
         li.append(snippet);
