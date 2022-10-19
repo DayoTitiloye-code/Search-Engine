@@ -57,7 +57,6 @@ characters = [
 ]
 
 function getRandomChar(characters){
-    
     return characters[Math.floor(Math.random()*characters.length)]
 }
 
@@ -74,6 +73,8 @@ app.get('/characters/:id', (req, res) =>{
 
     res.send(character)
 })
+
+app.get('/characters/random', (req, res) => res.send(getRandomChar(characters)))
 
 app.listen(port, ()=>{
     console.log(`App is running on port ${port}`)
