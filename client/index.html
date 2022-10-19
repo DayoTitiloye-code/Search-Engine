@@ -8,17 +8,25 @@
     <title>Custom Search Engine</title>
     <!-- <script async src="https://cse.google.com/cse.js?cx=e5d862fcf3cff4a4f">
     </script> -->
-    <script src="index.js" Defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="index.js" defer></script>
 </head>
 
 <body>
-    <h1>GOOGLE</h1>
-    <input type="text" name="search" id="search" placeholder="Search here...">
-    <button>Google Search</button>
-    <button id="single">I'm Feeling Lucky</button>
+    <h1>CUSTOM SEARCH ENGINE</h1>
+    <form id="form" method="GET" action="localhost:3000">
+        <input id="input" type="text">
+        <button id="search-btn" type="submit">SEARCH</button>
+        <button id="rand-btn" type="submit">RAND SEARCH</button>
+    </form>
 
-    <h2 id="name"></h2>
-    <p id="description"></p>
+
+<div id="results">
+    <ul id="resultsContainer">
+
+    </ul>
+</div>
+
 </body>
 
 </html>
