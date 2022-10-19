@@ -1,5 +1,5 @@
-***Assignment Title: Custom Search Engine***
-
+***Assignment Title:***
+Custom Search Engine
 
 ***Installation & usage:***
 
@@ -15,14 +15,14 @@ and bring the server up by node app.js
   
 1.0 (up for review)
 
-init commit -> 01d55d4
-routing and bb array -> e56ecdc
-fetch works and render to DOM, added READEME -> 
+init commit: 01d55d4
+routing and bb array:e56ecdc
+fetch works and render to DOM, added READEME: 5a7591c
 
-***Bugs***
+***Bugs:***
 No bugs yet but could run out of daily api fetch requests
 
-***WINS/CHALLENGES***
+***WINS/CHALLENGES:***
 most important thing is to fetch my own api's endpoint to trigger
 which has a function inside that accepts an query to pull data
 from Google's search API. When fetched from the backend, the express
@@ -30,7 +30,7 @@ server makes this data available at the endpoint the the user queried
 for. fetch from the client side await all this process and succesfully
 brings the databack to the browser. which then can be rendered to the document.
 
-***How the app works***
+***How the app works:***
 The app is very simple, goto the search input and put in any search term,
 and click the search button to see results for the search term.
 
