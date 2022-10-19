@@ -17,7 +17,8 @@ and bring the server up by node app.js
 
 init commit: 01d55d4
 routing and bb array:e56ecdc
-fetch works and render to DOM, added READEME: 5a7591c
+fetch works and render to DOM, added READEME: 80c3dec
+fixed README: 5a7591c
 
 ***Bugs:***
 No bugs yet but could run out of daily api fetch requests
